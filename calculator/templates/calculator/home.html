@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Cписок блюд</title>
+</head>
+<body>
+
+    {% for dish in dishes %}
+        <h1>{{ dish }}</h1>
+        <br>
+    {% endfor %}
+
+         <form action="./test/" method="get" ><br>
+             <label>Введите название блюда</label>
+             <input id = 'dish' type="text" name='dish'>
+             <label>Количество персон</label>
+             <input id = 'count' type="text" name='count_ingrs'>
+             <button type="submit">Получить количество</button>
+         </form>
+<!--        <button>{{ url }}</button>-->
+        <br>
+        <br>
+
+
+</body>
+</html>
